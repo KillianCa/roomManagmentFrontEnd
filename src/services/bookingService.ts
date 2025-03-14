@@ -20,7 +20,7 @@ export const fetchBookings = async (): Promise<Booking[]> => {
     }
 };
 
-export const createbooking = async (bookingData: {
+export const createBooking = async (bookingData: {
     userId: number;
     roomId: number;
     startTime: string;
