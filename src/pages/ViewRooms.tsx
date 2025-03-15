@@ -169,7 +169,7 @@ const ViewRooms = () => {
         })}
       </div>
 
-      <footer className="footer">Footer Content</footer>
+      <footer className="footer"></footer>
     </div>
   );
 };
