@@ -1,0 +1,133 @@
+/* General Layout */
+.view-rooms-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f9f9f9;
+}
+
+/* Header and Footer */
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.header img {
+  max-height: 75px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Logo */
+.logo {
+  max-height: 60px;
+}
+
+/* Navigation Button */
+.nav-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #0056b3;
+}
+
+/* Time Selection */
+.time-selection {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.time-selection input,
+.time-selection select,
+.search-button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Page Title */
+.page-title {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* Rooms List */
+.rooms-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+/* Individual Room Card */
+.room-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 250px;
+}
+
+.room-card h2 {
+  margin-bottom: 10px;
+}
+
+/* Book and Occupied Buttons */
+.book-button,
+.occupied-button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-button {
+  background-color: green;
+  color: white;
+}
+
+.book-button:hover {
+  background-color: darkgreen;
+}
+
+.occupied-button {
+  background-color: grey;
+  color: white;
+  cursor: not-allowed;
+}
