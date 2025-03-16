@@ -3,9 +3,9 @@ import LandingPage from "./pages/LandingPage";
 import StudentLogin from "./pages/StudentLogin";
 import LecturerLogin from "./pages/LecturerLogin";
 import LibrarianLogin from "./pages/LibrarianLogin";
-import StudentLecturerDashboard from "./pages/studentLecturerDashboard";
+import StudentLecturerDashboard from "./pages/StudentLecturerDashboard";
 import LibrarianDashboard from "./pages/LibrarianDahsboard";
-import ViewRooms from "./pages/ViewRooms"
+import ViewRooms from "./pages/ViewRooms";
 import ViewMyBookings from "./pages/ViewMyBookings";
 import ManageRooms from "./pages/MangeRooms";
 import ManageBookings from "./pages/ManageBookings";
