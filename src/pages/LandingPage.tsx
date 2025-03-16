@@ -24,7 +24,6 @@ const LandingPage = () => {
         <h1 className="title">Please Login</h1>
 
         <div className="role-container">
-          {/* Student Login */}
           <div className="role-box" onClick={() => navigate("/login/student")}>
             <h2>Student</h2>
             <img src={StudentImg} alt="Student" className="role-img" />

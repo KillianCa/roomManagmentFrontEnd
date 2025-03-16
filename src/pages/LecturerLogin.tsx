@@ -1,28 +1,12 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../styles/LoginPage.css";
 import UlImg from "../images/UL_logo.png";
 
 const LecturerLogin = () => {
   const navigate = useNavigate();
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    setError("");
-
-    if (!username || !password) {
-      setError("Please enter both username and password.");
-      return;
-    }
-
-    if (username !== "lecturerUser" || password !== "lecturerPass") {
-      setError("Invalid credentials. Please try again.");
-      return;
-    }
-
     navigate("/dashboard");
   };
 
@@ -37,24 +21,14 @@ const LecturerLogin = () => {
           Home
         </button>
       </header>
+
       <div className="login-box">
         <h2>Lecturer Login</h2>
-        {error && <p className="error-message">{error}</p>}
         <form onSubmit={handleLogin}>
           <label>Username</label>
-          <input
-            type="text"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            placeholder="Enter username"
-          />
+          <input type="text" placeholder="Enter username" />
           <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Enter password"
-          />
+          <input type="password" placeholder="Enter password" />
           <button type="submit">Login</button>
         </form>
       </div>

@@ -6,6 +6,10 @@ import LibrarianLogin from "./pages/LibrarianLogin";
 import StudentLecturerDashboard from "./pages/studentLecturerDashboard";
 import LibrarianDashboard from "./pages/LibrarianDahsboard";
 import ViewRooms from "./pages/ViewRooms"
+import ViewMyBookings from "./pages/ViewMyBookings";
+import ManageRooms from "./pages/MangeRooms";
+import ManageBookings from "./pages/ManageBookings";
+import ManageUsers from "./pages/ManageUsers";
 function App() {
   return (
     <Router>
@@ -17,6 +21,10 @@ function App() {
         <Route path="/dashboard" element={<StudentLecturerDashboard />} />
         <Route path="/librarian/dashboard" element={<LibrarianDashboard />} />
         <Route path="/view-rooms" element={<ViewRooms />} />
+        <Route path="/my-bookings" element={<ViewMyBookings />} />
+        <Route path="/manage-rooms" element={<ManageRooms />} />
+        <Route path="/manage-bookings" element={<ManageBookings />} />
+        <Route path="/manage-users" element={<ManageUsers />} />
       </Routes>
     </Router>
   );
